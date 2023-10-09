@@ -4,38 +4,38 @@ Automated ballast discharge from a balloon using GPS coordinates with a GSM comm
 ## How the system works
 The system is installed on a balloon and is designed for emergency ballast release to avoid a collision with the ground in conditions when the balloon driver for some reason does not do this on his own
 Before the start of the flight, the criteria by which ballast must be discharged are established in advance::
-•	Descent below a certain barometric altitude
-•	Remote command via mobile connection
-•	Exiting a certain area or entering a certain area (determined by current GPS coordinates) (optional)
+* Descent below a certain barometric altitude
+* Remote command via mobile connection
+* Exiting a certain area or entering a certain area (determined by current GPS coordinates) (optional)
 
 The system provides a two-way communication channel via a mobile network, which allows you to check the system status at any time, obtain current coordinates, barometric height, change the trigger criterion and, if necessary, manually issue a reset command
 Ballast is released by physically cutting the sling to which it is attached using electric scissors controlled directly from the controller
 The system is completely independent (powered by built-in batteries) and does not require any action from the crew during the flight. All that is required is correct initialization of the system before flight.
 
 ## System parameters:
-•	Main controller		– Arduino Uno
-•	Processor 			– 16 MGh, ATmega328P
-•	Controller memory		– 2 kB SRAM, 1kB EEPROM
-•	GSM GPRS  module		– SIM900
-•	GPRS slot			– Class 8 and 8 GPRS, Class B mobile station
-•	Working frequency		– 850, 900, 1800, 1900 MGh
-•	GPS antenna frequency	– 1575.42 MHz
-•	GPS antenna Gain		–  28 dBi
-•	Sensors set			– L3G4200D (gyroscope), ADXL345 (accelerometer), HMC5883L (magnetometer) and BMP085 (barometric sensor)
-•	Measured pressure range	– 300..1100 hectopascals (+9000.. -500 m above sea level)
-•	Response time		– 7.5 ms
-•	Power supply			
+* Main controller		– Arduino Uno
+* Processor 			– 16 MGh, ATmega328P
+* Controller memory		– 2 kB SRAM, 1kB EEPROM
+* GSM GPRS  module		– SIM900
+* GPRS slot			– Class 8 and 8 GPRS, Class B mobile station
+* Working frequency		– 850, 900, 1800, 1900 MGh
+* GPS antenna frequency	– 1575.42 MHz
+* GPS antenna Gain		–  28 dBi
+* Sensors set			– L3G4200D (gyroscope), ADXL345 (accelerometer), HMC5883L (magnetometer) and BMP085 (barometric sensor)
+* Measured pressure range	– 300..1100 hectopascals (+9000.. -500 m above sea level)
+* Response time		– 7.5 ms
+* Power supply			
   –  4xAA batteries (logic)
   –	1500 mAh, 3.6 V LiMn accumulator (Cordless Shears)
-•	Operational temperature	– -40°C до +85°C;
-•	Weight				
+* Operational temperature	– -40°C до +85°C;
+* Weight				
   – 180 g (main components)
   –	650 g (Cordless Shears)
   –	~1kg (full assembly include mount and housing) 
-•	Dimensions
+* Dimensions
   – 90x90x60 mm (component box)
   –	300x90x90mm (Cordless Shears)
-•	Operational temperature	– 0 to +45°C;
+* Operational temperature	– 0 to +45°C;
 
 
 ## Basic system control functions (via mobile network)
@@ -73,16 +73,18 @@ During initialization, the barometric sensor records the current altitude and st
 When you press the test button or receive an SMS with the text “1”, the shears are turned on three times to check their operation, a response SMS with the current status
 
 ## Wiring diagram
+
+![Automatic Ballast Dischargewiring diagram](https://github.com/Brabn/AutomaticBallastDischarge/blob/main/Wiring_diagram/AutomaticBallastDischarge.Wiring_diagram.png)
  
 ## Components
-•	Controller Arduino UNO 						
-•	Snsor module GY80 (accelerometer + barometer) 
-•	Arduino GPS shield			
-•	Active GPS antenna							
-•	SIM900 GSM/GPRS shield 				
-•	5V Relay for shears activatiom 					
-•	Battery box for 4xАА batteries					
-•	Cordless Shears (Bosch 825306 Ciso or similar)
+* Controller Arduino UNO 						
+* Sensor module GY80 (accelerometer + barometer) 
+* Arduino GPS shield			
+* Active GPS antenna							
+* SIM900 GSM/GPRS shield 				
+* 5V Relay for shears activatiom 					
+* Battery box for 4xАА batteries					
+* Cordless Shears (Bosch 825306 Ciso or similar)
 
 ## Further development of the system
  - [ ] Adding as a trigger criterion, entering or exiting a certain area (determined by current GPS coordinates
@@ -92,24 +94,3 @@ When you press the test button or receive an SMS with the text “1”, the shea
  - [ ] User interface improvements - creating a mobile application with a convenient interface for initialization. displaying the current status and managing the system functions
 
 ## Photos
-
-
- 
- 
- 
- 
- 
- 
-
-
-![Glasses wiring diagram](https://github.com/Brabn/AutomaticBallastDischarge/blob/main/Wiring_diagram/AutomaticBallastDischarge.Wiring_diagram.png)
-
-
-
- 
- 
- 
- 
- 
-
-
