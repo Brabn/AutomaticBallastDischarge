@@ -1,6 +1,8 @@
 # AutomaticBallastDischarge
 Automated ballast discharge from a balloon using GPS coordinates with a GSM communication channel
 
+![Automatic Ballast Discharge in assembly](https://github.com/Brabn/AutomaticBallastDischarge/blob/main/Photos/AutomaticBallastDischarge.Assembled.jpg)
+
 ## How the system works
 The system is installed on a balloon and is designed for emergency ballast release to avoid a collision with the ground in conditions when the balloon driver for some reason does not do this on his own
 
@@ -102,3 +104,13 @@ When you press the test button or receive an SMS with the text “1”, the shea
  - [ ] User interface improvements - creating a mobile application with a convenient interface for initialization. displaying the current status and managing the system functions
 
 ## Photos
+
+![Automatic Ballast Discharge in assembly](https://github.com/Brabn/AutomaticBallastDischarge/blob/main/Photos/AutomaticBallastDischarge.Assembled.jpg)
+
+![Automatic Ballast Discharge in assembly](https://github.com/Brabn/AutomaticBallastDischarge/blob/main/Photos/AutomaticBallastDischarge.Inside_case.jpg)
+
+![Automatic Ballast Discharge in assembly](https://github.com/Brabn/AutomaticBallastDischarge/blob/main/Photos/AutomaticBallastDischarge.Main_boards.jpg)
+
+![Automatic Ballast Discharge in assembly](https://github.com/Brabn/AutomaticBallastDischarge/blob/main/Photos/AutomaticBallastDischarge.Shears_test.3gp)
+
+
