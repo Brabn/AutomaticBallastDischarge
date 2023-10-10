@@ -84,7 +84,7 @@ When you press the test button or receive an SMS with the text “1”, the shea
 
 ## Wiring diagram
 
-![Automatic Ballast Dischargewiring diagram](https://github.com/Brabn/AutomaticBallastDischarge/blob/main/Wiring_diagram/AutomaticBallastDischarge.Wiring_diagram.png)
+![Automatic Ballast Discharge wiring diagram](https://github.com/Brabn/AutomaticBallastDischarge/blob/main/Wiring_diagram/AutomaticBallastDischarge.Wiring_diagam.jpg)
  
 ## Components
 * Controller Arduino UNO 						
