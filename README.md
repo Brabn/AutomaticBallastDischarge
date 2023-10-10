@@ -24,11 +24,11 @@ The system is completely independent (powered by built-in batteries) and does no
 * Sensors set			– L3G4200D (gyroscope), ADXL345 (accelerometer), HMC5883L (magnetometer) and BMP085 (barometric sensor)
 * Measured pressure range	– 300..1100 hectopascals (+9000.. -500 m above sea level)
 * Response time		– 7.5 ms
-* Power supply			
+* Power supply
   – 4xAA batteries (logic)
   – 1500 mAh, 3.6 V LiMn accumulator (Cordless Shears)
 * Operational temperature	– -40°C до +85°C;
-* Weight				
+* Weight			
   – 180 g (main components)
   – 650 g (Cordless Shears)
   – ~1kg (full assembly include mount and housing) 
