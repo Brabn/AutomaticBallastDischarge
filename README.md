@@ -52,7 +52,8 @@ Reply SMS – `0 OK H=91.32m(0.00m) Vrt=0.00m/s; N=48.456421; E=35.071960; Hrz=0
 Reply SMS – `1 OK H=91.32m(0.00m) Vrt=0.00m/s; N=48.456421; E=35.071960; Hrz=0km/h`
 1. SMS with the text `2` – turns on and off the automatic activation of the shears by height value. If the automation has already worked once, then the repeated decrease will not turn on the shears. With this command you can re-enable automation or forcefully disable it. 
 Reply SMS – `Control ON/OFF H=91.32m(0.00m) Vrt=0.00m/s; N=48.456421; E=35.071960; Hrz=0km/h`
-1. SMS with the text '3' - will request the current automation settings. Reply SMS: 'Settings: CutH=200m; AutoOnH=280m; Cuts=3;'
+1. SMS with the text '3' - will request the current automation settings.
+Reply SMS: 'Settings: CutH=200m; AutoOnH=280m; Cuts=3;'
 Here:
     * `CutH=200m` – height of operation of shears when descending, meters
     * `AutoOnH=280m` – height at which the automation will be turned on during ascent, meters
@@ -65,9 +66,13 @@ The parameters are saved in the controller's memory after the power is turned of
 ## Initialization procedure
 You arrive at the location and turn on the device with the power switch.
 At the same time, the “PWR” indicator in the corner of the upper board will light up - it signals that the power of the entire system is turned on. In addition, the “Status” indicator should light up - it signals that the GSM module itself is turned on.
+
 If the “Status” and “Net” indicators light up, then go out, then light up again - there is not enough power for the GSM module to operate
+
 Immediately after switching on, the “Net” indicator also starts flashing. If the blinking is frequent (every 0.5-0.8 seconds), it means the network is being searched and an attempt is being made to connect. If the SIM card is inserted and there is a connection, then a few seconds after turning on the “Status” indicator will start flashing more slowly (every 2-3 seconds). This means that the system has registered with the mobile network and can be used.
+
 During initialization, the barometric sensor records the current altitude and stores it as zero. When the module enters operating mode, it signals this (either with a buzzer or SMS with the text “0 OK H=550(+000)” (here 550 is the altitude relative to sea level, 000 is relative to zero) and the current coordinates and altitude). When you receive an SMS with the text “0” from your number, the altitude/coordinates are memorized again (as the original ones) and the same response SMS occurs.
+
 When you press the test button or receive an SMS with the text “1”, the shears are turned on three times to check their operation, a response SMS with the current status
 
 ## Wiring diagram
