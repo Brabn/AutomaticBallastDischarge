@@ -41,8 +41,7 @@ The system is completely independent (powered by built-in batteries) and does no
 
 ## Basic system control functions (via mobile network)
 1. Call to the number of the inserted SIM card - after one or two beeps, the system will reset the call and send a status SMS in response.
-   * SMS format: `H=91.32m(0.34m) Vrt=0.00m/s; N=48.456421; E=35.071960; Hrz=0km/h`
-Data explanation:	
+   * Reply SMS: `H=91.32m(0.34m) Vrt=0.00m/s; N=48.456421; E=35.071960; Hrz=0km/h`
         + `H=91.32m` – altitude above sea level, calculated from atmospheric pressure, meters
         + `(0,34m)` – height relative to the zero specified during initialization. Even if the system is at the same point as when setting zero, it may show several centimeters in one direction or another (sensor measurements error)
         + `Vrt=0.00m/s` –  vertical speed calculated from the change in altitude over the last 10 seconds	N=48.456421; E=35.071960 – GPS coordinates 
@@ -56,7 +55,6 @@ If there is no GPS signal reception (for example indoors), then instead of the l
    * Reply SMS – `Control ON/OFF H=91.32m(0.00m) Vrt=0.00m/s; N=48.456421; E=35.071960; Hrz=0km/h`
 1. SMS with the text '3' - will request the current automation settings.
    * Reply SMS: 'Settings: CutH=200m; AutoOnH=280m; Cuts=3;'
-Here:
         + `CutH=200m` – height of operation of shears when descending, meters
         + `AutoOnH=280m` – height at which the automation will be turned on during ascent, meters
         + `Cuts=3` – number of cuts with shears
