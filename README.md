@@ -113,4 +113,6 @@ When you press the test button or receive an SMS with the text “1”, the shea
 
 ![Automatic Ballast Discharge in assembly](https://github.com/Brabn/AutomaticBallastDischarge/blob/main/Photos/AutomaticBallastDischarge.Shears_test.3gp)
 
+https://github.com/Brabn/AutomaticBallastDischarge/assets/140490234/3c1d7302-0958-42c9-9710-e73c9e247fef
+
 
