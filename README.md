@@ -47,17 +47,22 @@ The system is completely independent (powered by built-in batteries) and does no
         + `Vrt=0.00m/s` –  vertical speed calculated from the change in altitude over the last 10 seconds	N=48.456421; E=35.071960 – GPS coordinates 
         + `Hrz=0km/h` – horizontal speed calculated from changes in GPS coordinates, km/h
 If there is no GPS signal reception (for example indoors), then instead of the last three numbers there will be “GPS Loading”. For testing, GPS antenna  can be placed on a windowsill or outside an open window.
+
 1. SMS with the text `0` - sets the current altitude as zero and turns on the automation (if it worked before). 
    * Reply SMS – `0 OK H=91.32m(0.00m) Vrt=0.00m/s; N=48.456421; E=35.071960; Hrz=0km/h`
+
 1. SMS with the text `1` - Triggers the scissors regardless of height. 
    * Reply SMS – `1 OK H=91.32m(0.00m) Vrt=0.00m/s; N=48.456421; E=35.071960; Hrz=0km/h`
+
 1. SMS with the text `2` – turns on and off the automatic activation of the shears by height value. If the automation has already worked once, then the repeated decrease will not turn on the shears. With this command you can re-enable automation or forcefully disable it. 
    * Reply SMS – `Control ON/OFF H=91.32m(0.00m) Vrt=0.00m/s; N=48.456421; E=35.071960; Hrz=0km/h`
+
 1. SMS with the text '3' - will request the current automation settings.
    * Reply SMS: 'Settings: CutH=200m; AutoOnH=280m; Cuts=3;'
         + `CutH=200m` – height of operation of shears when descending, meters
         + `AutoOnH=280m` – height at which the automation will be turned on during ascent, meters
         + `Cuts=3` – number of cuts with shears
+
 1. SMS with the text `Set 200,280,3` - sets the parameters of cut height,ascent min height and number of cuts. 
     * Reply SMS `Settings: CutH=200m; AutoOnH=280m; Cuts=3;`
 The parameters are saved in the controller's memory after the power is turned off. The next time you turn it on they will be installed automatically. When you turn it on for the first time, Iе ші recommend to set these parameters once via SMS. The last number to which the SMS was sent is also remembered.
